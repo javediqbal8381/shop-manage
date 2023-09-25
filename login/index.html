@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <meta
+      http-equiv="X-Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <link rel="stylesheet" href="./index.css">
+    <title>Hello from Electron renderer!</title>
+  </head>
+  <body>
+    <!-- login -->
+    <div class="login_container">
+      <label for="user_name">Enter User Name</label>
+      <input class="login_input" id="user_name" type="text">
+      <br>
+      <label for="user_password">Enter Password</label>
+      <input class="login_input" id="user_password" type="text">
+      <br>
+      <button id="login_btn" class="login_btn">Login</button>
+    </div>
+    <script src="./index.js"></script>
+    <!-- login end -->
+  </body>
+</html>
